@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de producto - Distribuidora Gas El Volcán</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <nav>        
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.jpg" alt="Logo Gas El Volcán" class="logo-img">
+                    <span class="logo-nombre">Gas El Volcán</span>
+                </a>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+            <label for="menu-toggle" class="menu-toggle-btn">☰</label>
+            <ul class="menu-principal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <div class="acciones-usuario">
+                <a href="login.html">Iniciar sesión</a>
+                <a href="registro.html">Registrar usuario</a>
+                <a href="carrito.html" class="carrito-link">🛒 Carrito (<span id="contadorCarrito">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="contenedor-principal">
+        <p id="breadcrumb"></p>
+
+        <div id="detalleProducto"></div>
+
+        <h2>Productos relacionados</h2>
+        <div id="grid-relacionados"></div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Distribuidora Gas El Volcán - Chillán, Ñuble</p>    
+    </footer>
+    
+    <script src="js/productos-data.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/sesion.js"></script>
+    <script src="js/producto-detalle.js"></script>
+</body>
+</html>

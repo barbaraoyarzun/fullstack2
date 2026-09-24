@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidora Gas El Volcán - Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.jpg" alt="Logo Gas El Volcán" class="logo-img">
+                    <span class="logo-nombre">Gas El Volcán</span>
+                </a>
+            </div>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+            <label for="menu-toggle" class="menu-toggle-btn">☰</label>
+            
+            <ul class="menu-principal">
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <div class="acciones-usuario">
+                <a href="login.html">Iniciar sesión</a>
+                <a href="registro.html">Registrar usuario</a>
+                <a href="carrito.html" class="carrito-link">🛒 Carrito (<span id="contadorCarrito">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Bienvenido a Distribuidora de gas "El Volcán"</h1>
+            <p>Cilindros de gas, reguladores, mangueras y accesorios, con despacho a domicilio en Chillán y alrededores.</p>
+            <a href="productos.html" class="btn-primario">Ver productos</a>
+        </section>
+
+        <h2>Productos destacados</h2>
+        <div id="grid-productos"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Distribuidora Gas El Volcán - Chillán, Ñuble</p>    
+    </footer>
+    
+    <script src="js/productos-data.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/sesion.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

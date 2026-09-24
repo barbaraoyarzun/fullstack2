@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - Distribuidora Gas El Volcán</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.jpg" alt="Logo Gas El Volcán" class="logo-img">
+                    <span class="logo-nombre">Gas El Volcán</span>
+                </a>
+            </div>
+            <ul class="menu-principal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Volver al Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <h1>Finalizar Compra</h1>
+        
+        <div class="layout-carrito">
+            <section class="items-carrito">
+                <form id="formPago">
+                    <div class="form-group">
+                        <label for="direccion">Dirección de Despacho</label>
+                        <input type="text" id="direccion" placeholder="Ej: Los Pajaritos 123, Chillán">
+                        <span id="errorDireccion" class="error-mensaje"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comuna">Comuna</label>
+                        <select id="comuna">
+                            <option value="">Seleccione una comuna...</option>
+                            <option value="Chillan">Chillán</option>
+                            <option value="Chillan Viejo">Chillán Viejo</option>
+                            <option value="El Carmen">El Carmen</option>
+                            <option value="Pinto">Pinto</option>
+                            <option value="San Ignacio">San Ignacio</option>
+                            <option value="Bulnes">Bulnes</option>
+                            <option value="Quillon">Quillón</option>
+                        </select>
+                        <span id="errorComuna" class="error-mensaje"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="metodoPago">Método de Pago</label>
+                        <select id="metodoPago">
+                            <option value="">Seleccione un método...</option>
+                            <option value="webpay">Webpay (Tarjeta de Crédito/Débito)</option>
+                            <option value="efectivo">Efectivo al recibir</option>
+                            <option value="transferencia">Transferencia Bancaria</option>
+                        </select>
+                        <span id="errorMetodo" class="error-mensaje"></span>
+                    </div>
+
+                    <button type="submit" class="btn-primario">Confirmar y Pagar</button>
+                </form>
+            </section>
+
+            <aside class="resumen-carrito">
+                <div class="total-compra">
+                    <span>TOTAL A PAGAR: $</span>
+                    <span id="totalPago">0</span>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script src="js/productos-data.js"></script>
+    <script src="js/validaciones-comunes.js"></script>
+    <script src="js/pago.js"></script>
+</body>
+</html>

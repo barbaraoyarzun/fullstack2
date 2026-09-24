@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - Distribuidora Gas El Volcán</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.jpg" alt="Logo Gas El Volcán" class="logo-img">
+                    <span class="logo-nombre">Gas El Volcán</span>
+                </a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+            <label for="menu-toggle" class="menu-toggle-btn">&#9776;</label>
+
+            <ul class="menu-principal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <div class="acciones-usuario">
+                <a href="login.html">Iniciar sesión</a>
+                <a href="registro.html" class="activo">Registrar usuario</a>
+                <a href="carrito.html" class="carrito-link">🛒 Carrito (<span id="contadorCarrito">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenedor-auth">
+      <div class="auth-card auth-card-ancha">
+      
+        <div class="auth-header">
+          <div class="icono-auth">📝</div>
+          <h2>Registro de Usuario</h2>
+          <p class="subtitulo">Crea tu cuenta para pedir tus cilindros a domicilio</p>
+        </div>
+
+        <form id="formRegistro" novalidate>
+        
+          <div class="form-group">
+            <label for="run">RUN (Sin puntos ni guión, ej: 19011022K) *</label>
+            <input 
+              type="text" 
+              id="run" 
+              name="run" 
+              maxlength="9" 
+              placeholder="19011022K"
+              required
+            >
+            <small class="mensaje-error" id="error-run"></small>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group form-col">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" maxlength="50" placeholder="Ej: Juan" required>
+              <small class="mensaje-error" id="error-nombre"></small>
+            </div>
+            <div class="form-group form-col">
+              <label for="apellidos">Apellidos *</label>
+              <input type="text" id="apellidos" name="apellidos" maxlength="100" placeholder="Ej: Pérez González" required>
+              <small class="mensaje-error" id="error-apellidos"></small>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="correo">Correo electrónico *</label>
+            <input 
+              type="email" 
+              id="correo" 
+              name="correo" 
+              maxlength="100" 
+              placeholder="ejemplo@duoc.cl o @gmail.com"
+              required
+            >
+            <small class="mensaje-error" id="error-correo"></small>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group form-col">
+              <label for="password">Contraseña (4 a 10 caracteres) *</label>
+              <input type="password" id="password" name="password" minlength="4" maxlength="10" placeholder="••••••••" required>
+              <small class="mensaje-error" id="error-password"></small>
+            </div>
+            <div class="form-group form-col">
+              <label for="confirmPassword">Confirmar Contraseña *</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" minlength="4" maxlength="10" placeholder="••••••••" required>
+              <small class="mensaje-error" id="error-confirmPassword"></small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group form-col">
+              <label for="telefono">Teléfono (opcional)</label>
+              <input type="tel" id="telefono" name="telefono" maxlength="12" placeholder="+56912345678">
+              <small class="mensaje-error" id="error-telefono"></small>
+            </div>
+            <div class="form-group form-col">
+              <label for="fechaNacimiento">Fecha de Nacimiento (opcional)</label>
+              <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+              <small class="mensaje-error" id="error-fechaNacimiento"></small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group form-col">
+              <label for="region">Región *</label>
+              <select id="region" name="region" required>
+                <option value="">-- Selecciona una región --</option>
+              </select>
+              <small class="mensaje-error" id="error-region"></small>
+            </div>
+
+            <div class="form-group form-col">
+              <label for="comuna">Comuna *</label>
+              <select id="comuna" name="comuna" required disabled>
+                <option value="">-- Selecciona primero la región --</option>
+              </select>
+              <small class="mensaje-error" id="error-comuna"></small>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="direccion">Dirección de entrega *</label>
+            <input 
+              type="text" 
+              id="direccion" 
+              name="direccion" 
+              maxlength="300" 
+              placeholder="Ej: Av. O'Higgins 1234, Chillán"
+              required
+            >
+            <small class="mensaje-error" id="error-direccion"></small>
+          </div>
+
+          <button type="submit" class="btn-primario btn-block btn-margen-top">Completar Registro</button>
+
+          <div id="mensaje-general" class="mensaje-alerta"></div>
+        </form>
+
+        <div class="auth-footer">
+          <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Distribuidora Gas El Volcán - Chillán, Ñuble</p>
+    </footer>
+
+    <script src="js/validacion-run.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/sesion.js"></script>
+    <script src="js/registro.js"></script>
+</body>
+</html>
