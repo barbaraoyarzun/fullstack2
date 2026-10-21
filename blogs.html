@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - Gas El Volcán</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.jpg" alt="Logo Gas El Volcán" class="logo-img">
+                    <span class="logo-nombre">Gas El Volcán</span>
+                </a>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+            <label for="menu-toggle" class="menu-toggle-btn">☰</label>
+            <ul class="menu-principal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html" class="activo">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="acciones-usuario">
+                <a href="login.html">Iniciar sesión</a>
+                <a href="registro.html">Registrar usuario</a>
+                <a href="carrito.html" class="carrito-link">🛒 Carrito (<span id="contadorCarrito">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <h1 class="titulo-centrado">NOTICIAS IMPORTANTES</h1>
+
+        <div class="lista-blogs">
+            <article class="tarjeta-blog">
+                <div class="blog-contenido">
+                    <h2>CASO CURIOSO #1: Consejos de seguridad con el gas</h2>
+                    <p>¿Sabías que el gas no tiene olor? Te explicamos por qué huele y qué hacer ante una fuga. Consejos de seguridad, seguridad y ahorro para tu hogar.</p>
+                    <a href="blog-detalle-1.html" class="btn-secundario">VER CASO</a>
+                </div>
+                <div class="blog-imagen">
+                    <img src="img/blog1.jpg" alt="Seguridad con el gas">
+                </div>
+            </article>
+
+            <article class="tarjeta-blog">
+                <div class="blog-contenido">
+                    <h2>CASO CURIOSO #2: ¿Cómo ahorrar gas en invierno?</h2>
+                    <p>4 consejos simples para que tu balón de gas dure hasta 30% más durante el invierno en Chillán. Optimiza el uso de tus estufas y calefón.</p>
+                    <a href="blog-detalle-2.html" class="btn-secundario">VER CASO</a>
+                </div>
+                <div class="blog-imagen">
+                    <img src="img/blog2.jpg" alt="Ahorro de gas en invierno">
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Distribuidora Gas El Volcán - Chillán, Ñuble</p>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/sesion.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

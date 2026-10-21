@@ -1,16 +1,41 @@
-# React + Vite
+# Distribuidora Gas El Volcán 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto de desarrollo web front-end para la asignatura *DESARROLLO FULLSTACK II_009V* (Duoc UC). Sistema de comercio electrónico y gestión para una distribuidora de gas licuado que opera en la región de Ñuble (Chillán, Chillán Viejo, El Carmen, Pinto, San Ignacio, Bulnes y Quillón).
 
-Currently, two official plugins are available:
+## Características Principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Catálogo de Productos:** Visualización dinámica de cilindros, reguladores y accesorios.
+- **Carrito de Compras:** Gestión de productos seleccionados, cálculo automático de subtotales y total.
+- **Autenticación y Registro:** Creación de cuentas con validación estricta matemática de RUN chileno (Módulo 11).
+- **Panel de Administración:** Sistema de gestión (CRUD) para agregar, editar y eliminar productos y usuarios.
+- **Persistencia de Datos:** Uso de `localStorage` para almacenar usuarios, catálogo y carrito sin necesidad de backend.
+- **Código Limpio:** Implementación estricta de eventos mediante `addEventListener`, sin eventos en línea ni comentarios en el código de producción.
 
-## React Compiler
+## Tecnologías Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
 
-## Expanding the ESLint configuration
+## Requisitos y Ejecución
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+El proyecto está diseñado y probado para ejecutarse de manera óptima en el navegador **Microsoft Edge**.
+
+1. Abre la carpeta raíz del proyecto en **Visual Studio Code**.
+2. Asegúrate de tener instalada la extensión **Live Server**.
+3. Haz clic derecho sobre el archivo `index.html` y selecciona **"Open with Live Server"**.
+
+## Credenciales de Prueba
+
+## Cupon de descuento
+- DUOC2026 
+
+Para revisar las funcionalidades del Panel de Administración, utiliza las siguientes credenciales:
+
+- **Correo:** admin@duoc.cl
+- **Contraseña:** admin
+
+## Autores
+
+- Bárbara Oyarzún
+- Luis Medina

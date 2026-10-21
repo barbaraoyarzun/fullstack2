@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 1 - Gas El Volcán</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.jpg" alt="Logo Gas El Volcán" class="logo-img">
+                    <span class="logo-nombre">Gas El Volcán</span>
+                </a>
+            </div>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+            <label for="menu-toggle" class="menu-toggle-btn">☰</label>
+            
+            <ul class="menu-principal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html" class="activo">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            
+            <div class="acciones-usuario">
+                <a href="login.html">Iniciar sesión</a>
+                <a href="registro.html">Registrar usuario</a>
+                <a href="carrito.html" class="carrito-link">🛒 Carrito (<span id="contadorCarrito">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal" style="max-width: 800px;">
+        <h1>¿Sabías que el gas no tiene olor?</h1>
+        
+        <div class="blog-detalle-imagen">
+            <img src="img/blog1-detalle.jpg" alt="Detalle sobre el olor del gas licuado" class="img-fluida">
+        </div>
+        
+        <div class="blog-detalle-contenido">
+            <p>El gas licuado es originalmente inodoro. Ese olor fuerte y característico que todos reconocemos no es propio del gas, sino que se trata de <strong>Mercaptano</strong>, un compuesto químico agregado a propósito por las compañías para ayudar a detectar fugas rápidamente y evitar accidentes.</p>
+            <p>Es vital que ante cualquier sospecha de este olor en tu hogar, cierres la llave de paso, ventiles el área abriendo puertas y ventanas, y no enciendas ningún interruptor eléctrico. En Gas El Volcán, todos nuestros balones pasan por 3 estrictos controles de seguridad antes de llegar a la puerta de tu casa en Chillán, garantizando válvulas selladas y cilindros en óptimo estado.</p>
+        </div>
+
+        <div class="blog-detalle-navegacion">
+            <a href="blogs.html" class="btn-secundario">← Volver a Blogs</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Distribuidora Gas El Volcán - Chillán, Ñuble</p>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/sesion.js"></script>
+</body>
+</html>
