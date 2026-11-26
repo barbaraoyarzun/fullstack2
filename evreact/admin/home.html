@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Gas El Volcán</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar">
+            <div class="admin-logo">
+                <span>Gas El Volcán</span>
+            </div>
+            <ul class="admin-menu">
+                <li><a href="home.html" class="activo">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="usuarios.html">Usuarios</a></li>
+                <li><a href="../index.html">Ver sitio normal</a></li>
+                <li><a href="../index.html" id="btn-cerrar-sesion">Cerrar Sesión</a></li>
+            </ul>
+        </aside>
+
+        <main class="admin-contenido">
+            <h1>¡Hola Administrador!</h1>
+            <p>Bienvenido al panel de administración de Gas El Volcán.</p>
+            
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Productos</h3>
+                    <p id="statProductos">Cargando...</p>
+                    <a href="productos.html">Ver productos</a>
+                </div>
+                <div class="stat-card">
+                    <h3>Usuarios</h3>
+                    <p id="statUsuarios">Cargando...</p>
+                    <a href="usuarios.html">Ver usuarios</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/productos-data.js"></script>
+    <script src="../js/admin-home.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Usuarios</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+
+    <div class="admin-layout">
+
+        <aside class="admin-sidebar">
+            <div class="admin-logo">
+                <span>Gas El Volcán</span>
+            </div>
+            <ul class="admin-menu">
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="usuarios.html" class="activo">Usuarios</a></li>
+                <li><a href="../index.html">Ver sitio normal</a></li>
+                <li><a href="../index.html" id="btn-cerrar-sesion">Cerrar Sesión</a></li>
+            </ul>
+        </aside>
+
+        <main class="admin-contenido">
+            <div class="admin-header-seccion">
+                <h1>Usuarios</h1>
+                <a href="usuario-nuevo.html" class="btn-primario">Nuevo Usuario</a>
+            </div>
+
+            <table class="tabla-admin">
+                <thead>
+                    <tr>
+                        <th>RUN</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Tipo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoUsuarios"></tbody>
+            </table>
+        </main>
+
+    </div>
+
+    <script src="../js/admin-usuarios.js"></script>
+</body>
+</html>

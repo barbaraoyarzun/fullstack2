@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Distribuidora Gas El Volcán</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.jpg" alt="Logo Gas El Volcán" class="logo-img">
+                    <span class="logo-nombre">Gas El Volcán</span>
+                </a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+            <label for="menu-toggle" class="menu-toggle-btn">&#9776;</label>
+
+            <ul class="menu-principal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html" class="activo">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <div class="acciones-usuario">
+                <a href="login.html">Iniciar sesión</a>
+                <a href="registro.html">Registrar usuario</a>
+                <a href="carrito.html" class="carrito-link">🛒 Carrito (<span id="contadorCarrito">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="video-nosotros">
+        <video autoplay muted loop playsinline>
+            <source src="video/camiones-gas.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="video-text">
+            <h1>Gas El Volcán</h1>
+            <p>Desde 1998 abasteciendo a Chillán y Ñuble</p>
+            <p>2 camiones - 3 repartidores - Entrega el mismo día</p>
+        </div>
+    </section>
+
+    <main class="contenido-nosotros">
+        <h2>Nuestra Historia</h2>
+        <p>
+            Gas El Volcán nació en 1998 en Chillán como un negocio familiar dedicado a repartir
+            cilindros de gas licuado puerta a puerta en la Región de Ñuble. Durante casi tres
+            décadas hemos crecido a pulso: partimos anotando pedidos en un cuaderno y hoy
+            respondemos entre 80 y 120 pedidos diarios, siempre por teléfono. Este sitio es
+            nuestro primer paso para que puedas pedir tu gas en línea, sin tener que llamar
+            varias veces para saber si ya viene en camino.
+        </p>
+
+        <img src="img/camiones-chillan.jpg" alt="Camiones de Gas El Volcán en Chillán">
+
+        <h3>Nuestros Fundadores</h3>
+        <p>
+            Somos una empresa familiar: comenzamos con un camión y la idea de que nadie se
+            quedara sin gas en pleno invierno. Hoy la misma familia sigue al frente del negocio,
+            manteniendo el trato cercano que nos caracteriza desde el primer día.
+        </p>
+
+        <h3>¿Por qué elegirnos?</h3>
+        <ul>
+            <li>80 a 120 pedidos diarios entregados</li>
+            <li>Cilindros de 5kg, 11kg y 15kg, además de accesorios</li>
+            <li>Cobertura Chillán y alrededores</li>
+            <li>Pago online y contra entrega</li>
+        </ul>
+
+        <h3>Nuestro Compromiso</h3>
+        <p>
+            Pasar del cuaderno a la tecnología para que sepas exactamente cuándo llega tu gas.
+            Sin llamadas perdidas, sin esperas indefinidas.
+        </p>
+        
+        <h3>Equipo Desarrollador</h3>
+        <p>Este sitio fue desarrollado por estudiantes de Ingeniería en Informática de Duoc UC, en el ramo Fullstack II:</p>
+        <ul>
+            <li>Barbara Oyarzun</li>
+            <li>Luis Medina</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Distribuidora Gas El Volcán - Chillán, Ñuble</p>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/sesion.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
